@@ -198,6 +198,8 @@ class ConstDateTime implements DateTime {
 
   @override
   dynamic noSuchMethod(Invocation invocation) {
+    // Note: This solution is only valid on Flutter 3.3 / Dart 2.18
+    //
     // On the Web platform, the [DateTime.difference] method reads the `other._value` variable internally.
     // ConstDateTime does not have a `_value` variable, which leads to errors when running
     // Returning [millisecondsSinceEpoch] in this case will prevent the error from being reported.
