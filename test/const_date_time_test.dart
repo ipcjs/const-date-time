@@ -1,4 +1,4 @@
-import 'package:const_date_time/src/const_date_time.dart';
+import 'package:const_date_time/const_date_time.dart';
 import 'package:test/test.dart';
 
 const bool _kIsWeb = identical(0, 0.0);
