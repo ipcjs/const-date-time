@@ -100,7 +100,6 @@ void main() {
     });
 
     test('difference with DateTime', () {
-      print('=================');
       final d1 = DateTime(2022, 11, 11, 0);
       final d2 = const ConstDateTime(2022, 11, 11, 1);
       const delta = Duration(hours: 1);
